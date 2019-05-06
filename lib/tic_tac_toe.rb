@@ -14,11 +14,11 @@ class TicTacToe
   end
 
   def input_to_index
-  if !gets.chomp.is_a?(Integer)
-  begin
-    raise InputError
-  rescue input_to_index
-  end
+    if !gets.chomp.is_a?(Integer)
+      begin
+        raise InputError
+      rescue input_to_index
+    end
   end
 
   end
