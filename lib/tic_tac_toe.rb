@@ -44,7 +44,8 @@ class TicTacToe
       if input < 0 || input > 8
         begin
           raise StandardError
-        rescue "Please try again"
+        rescue 
+          puts "Please try again"
         end
         turn
       else
