@@ -19,7 +19,7 @@ class TicTacToe
       begin
         raise InputError
       rescue InputError => err
-        err.msg
+        puts err.msg
       end
       input_to_index
     end
