@@ -19,7 +19,7 @@ class TicTacToe
     raise InputError
   rescue input_to_index
   ebd
-    
+
   end
 
   def move(index, token = 'X')
