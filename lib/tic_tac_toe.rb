@@ -18,8 +18,6 @@ class TicTacToe
     unless input >= 0 && input <= 8
       begin
         raise InputError
-      rescue InputError => err
-        puts err.msg
       end
       input_to_index
     end
