@@ -45,6 +45,7 @@ class TicTacToe
     input = input_to_index(gets.chomp)
       raise StandardError
     rescue
+      puts "Please try again"
       retry if input < 0 || input > 8
     end
 
