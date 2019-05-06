@@ -14,9 +14,9 @@ class TicTacToe
   end
 
   def input_to_index
+  begin
     input = gets.chomp.to_i - 1
     unless input >= 0 && input <= 8
-      begin
         raise InputError
       rescue InputError => err
         err.msg
