@@ -15,7 +15,7 @@ class TicTacToe
 
   def input_to_index
     input = gets.chomp
-    unless input >= 0 && input <= 8
+    unless input.is_a?(String)
       begin
         raise ArgumentError
       end
