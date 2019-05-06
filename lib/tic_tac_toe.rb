@@ -34,13 +34,13 @@ class TicTacToe
   end
 
   def current_player
-
+    turn_count % 2 ? 'O' : 'X'
   end
 
   def turn
     puts "Please input a number 1 - 9"
     index = input_to_index
-    token = '0' if turn_count % 2
+
     valid_move? ? move(index, token)
   end
 end
