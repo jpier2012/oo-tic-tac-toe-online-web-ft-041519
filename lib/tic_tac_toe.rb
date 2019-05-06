@@ -41,7 +41,6 @@ class TicTacToe
     puts "Please input a number 1 - 9"
     input = input_to_index(gets.chomp)
     if input < 0 || input > 8
-      puts "Please enter a valid number"
       turn
     else
       input
