@@ -46,8 +46,8 @@ class TicTacToe
         raise StandardError.new("Please try again.")
       rescue
         retry
+      end
     end
-  end
 
     if valid_move?(input)
       move(input, current_player)
