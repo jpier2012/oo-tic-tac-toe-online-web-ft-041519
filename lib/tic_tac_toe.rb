@@ -18,6 +18,7 @@ class TicTacToe
       begin
         raise InputError
       rescue input_to_index
+      end
     end
   end
 
