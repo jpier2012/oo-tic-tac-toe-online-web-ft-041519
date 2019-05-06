@@ -16,11 +16,7 @@ class TicTacToe
   def input_to_index
     input = gets.chomp.to_i - 1
     unless input >= 0 && input <= 8
-      begin
-        raise InputError
-      rescue
-        puts "This is an error"
-      end
+      puts "Please enter a valid number"
       input_to_index
     end
   end
@@ -50,12 +46,6 @@ class TicTacToe
     input = input_to_index
     unless valid_move?(input)
       move(input, current_player)
-    end
-  end
-
-  class InputError < StandardError
-    def msg
-      "Please input a valid number."
     end
   end
 
