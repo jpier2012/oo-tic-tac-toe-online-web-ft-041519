@@ -63,5 +63,6 @@ class TicTacToe
   def won?
     WIN_COMBINATIONS.find do |combo|
       combo == ['X','X','X'] || combo == ['O','O','O']
+    end
   end
 end
