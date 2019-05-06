@@ -14,13 +14,7 @@ class TicTacToe
   end
 
   def input_to_index(string)
-    input = string.chomp.to_i - 1
-    if input < 0 || input > 8
-      puts "Please enter a valid number"
-      input_to_index
-    else
-      input
-    end
+    string.chomp.to_i - 1
   end
 
   def move(index, token = 'X')
@@ -46,8 +40,19 @@ class TicTacToe
   def turn
     puts "Please input a number 1 - 9"
     input = input_to_index(gets.chomp)
+    begin
+      raise StandardError
+    rescue turn
+    end
     valid_move?(input) ? move(input, current_player) : turn
     display_board
+
+    if input < 0 || input > 8
+      puts "Please enter a valid number"
+      input_to_index
+    else
+      input
+    end
   end
 
 end
