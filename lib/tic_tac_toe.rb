@@ -54,7 +54,7 @@ class TicTacToe
     else
       raise StandardError.new("Please try again")
     end
-    
+
     display_board
   end
 
