@@ -46,7 +46,7 @@ class TicTacToe
       begin
         raise InputError
       rescue InputError => error
-        error.msg
+        puts error.msg
       end
   end
 
