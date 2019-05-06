@@ -41,7 +41,13 @@ class TicTacToe
     puts "Please input a number 1 - 9"
     input = input_to_index
     unless valid_move?(input)
-      move(input, current_player) : raise InputError
+      move(input, current_player)
+    else
+      begin
+        raise InputError
+      rescue InputError => error
+        error.msg
+      end
   end
 
   class InputError < StandardError
