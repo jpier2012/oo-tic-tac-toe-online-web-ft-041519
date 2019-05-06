@@ -84,5 +84,5 @@ class TicTacToe
     won? ? @board[won?[0]] : nil
   end
 
-  
+
 end
