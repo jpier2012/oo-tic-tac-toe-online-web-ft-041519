@@ -42,7 +42,7 @@ class TicTacToe
     input = input_to_index(gets.chomp)
 
     if input < 0 || input > 8
-      puts "Please try again"
+      raise StandardError.new("Please try again")
     else
       input
     end
@@ -50,7 +50,7 @@ class TicTacToe
     if valid_move?(input)
       move(input, current_player)
     else
-      puts "Please try again"
+      raise StandardError.new("Please try again")
     end
 
     display_board
