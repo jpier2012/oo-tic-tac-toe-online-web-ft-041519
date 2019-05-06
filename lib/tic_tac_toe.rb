@@ -43,7 +43,7 @@ class TicTacToe
     puts "Please input a number 1 - 9"
 
     input = input_to_index(gets.chomp)
-        begin
+    begin
       raise StandardError
     rescue
       retry if input < 0 || input > 8
