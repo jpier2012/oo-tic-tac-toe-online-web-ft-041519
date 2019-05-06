@@ -15,6 +15,9 @@ class TicTacToe
 
   def input_to_index
     input = gets.chomp.to_i - 1
+    until input.is_a?(Integer)
+      input_to_index
+    end
   end
 
   end
