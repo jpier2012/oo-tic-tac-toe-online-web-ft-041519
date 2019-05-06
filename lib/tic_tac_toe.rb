@@ -85,6 +85,11 @@ class TicTacToe
   end
 
   def play
-    turn
+    turn until over?
+    case draw?
+    when true
+      puts "Cat's Game!"
+    else
+      "Congratulations #{winner}!"
   end
 end
