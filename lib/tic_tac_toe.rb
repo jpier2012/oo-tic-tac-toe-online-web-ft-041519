@@ -64,6 +64,7 @@ class TicTacToe
     WIN_COMBINATIONS.find do |combo|
       combo.all? {|token| token == 'X'}
       combo.all? {|token| token == 'O'}
+      pry
     end
   end
 end
