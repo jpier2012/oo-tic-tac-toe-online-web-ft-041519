@@ -40,17 +40,16 @@ class TicTacToe
   end
 
   def turn
+  begin
     puts "Please input a number 1 - 9"
     input = input_to_index(gets.chomp)
-
     if input < 0 || input > 8
-      begin
         raise StandardError.new("Please try again.")
-      rescue
-        retry
-      end
     end
-    binding.pry
+  rescue
+    retry
+  end
+
     if valid_move?(input)
       move(input, current_player)
     else
