@@ -62,10 +62,7 @@ class TicTacToe
 
   def won?
     WIN_COMBINATIONS.find do |combo|
-      combo.all? do |index|
-        index == 'X' || @board[index] == 'O'
-        binding.pry
-      end
+      combo.uniq.length == 1
     end
   end
 end
