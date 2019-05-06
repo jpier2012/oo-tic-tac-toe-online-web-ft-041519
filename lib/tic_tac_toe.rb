@@ -25,7 +25,7 @@ class TicTacToe
     @board[index] != " "
   end
 
-  def valid_move?
-    !position_taken? &&
+  def valid_move?(index)
+    && !position_taken? 
   end
 end
