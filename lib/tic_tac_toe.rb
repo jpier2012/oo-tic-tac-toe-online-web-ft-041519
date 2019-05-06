@@ -62,7 +62,7 @@ class TicTacToe
 
   def won?
     WIN_COMBINATIONS.find do |combo|
-      combo.uniq.length == 1
+      combo == ['X', 'X', 'X'] || combo == ['O', 'O', 'O']
     end
   end
 end
