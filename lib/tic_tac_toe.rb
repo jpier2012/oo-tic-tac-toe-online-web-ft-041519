@@ -41,6 +41,6 @@ class TicTacToe
     puts "Please input a number 1 - 9"
     index = input_to_index
 
-    valid_move? ? move(index, token)
+    valid_move? ? move(index, current_player)
   end
 end
