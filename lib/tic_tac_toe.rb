@@ -47,7 +47,6 @@ class TicTacToe
         rescue
           turn
         end
-        turn
       else
         input
       end
