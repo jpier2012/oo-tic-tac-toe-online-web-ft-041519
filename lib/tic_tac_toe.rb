@@ -42,14 +42,12 @@ class TicTacToe
     begin
       input = input_to_index(gets.chomp)
       if !input.is_a?(Integer) || input < 0 || input > 8
-        raise StandardError.new("Please try again.")
-      rescue
-        retry
-    end
-      else
-        input
+          raise StandardError.new("Please try again.")
+        rescue
+          retry
       end
     end
+  end
 
     if valid_move?(input)
       move(input, current_player)
