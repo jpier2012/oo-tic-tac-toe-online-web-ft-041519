@@ -50,9 +50,8 @@ class TicTacToe
   def turn
     puts "Please input a number 1 - 9"
     input = input_to_index
-      unless valid_move?(input)
-        move(input, current_player)
-      end
+    unless valid_move?(input)
+      move(input, current_player)
     end
   end
 
