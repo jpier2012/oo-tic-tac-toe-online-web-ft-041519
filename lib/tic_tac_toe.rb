@@ -46,13 +46,13 @@ class TicTacToe
       raise
     rescue
       puts "Please try again."
-      retry unless input >= 0 && input <= 8
+      retry if input < 0 || input > 8
     end
 
     if valid_move?(input)
       move(input, current_player)
     else
-      raise StandardError.new("Please try again")
+      puts "Please try again."
     end
 
     display_board
