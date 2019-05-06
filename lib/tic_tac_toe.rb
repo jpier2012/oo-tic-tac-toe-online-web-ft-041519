@@ -48,14 +48,13 @@ class TicTacToe
       end
       input
     end
-  end
 
     if valid_move?(input)
       move(input, current_player)
     else
       raise StandardError.new("Please try again")
     end
-
+    
     display_board
   end
 
