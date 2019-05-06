@@ -54,8 +54,11 @@ class TicTacToe
       if valid_move?(input)
         move(input, current_player)
       else
-        puts "Please try again."
-        turn
+        begin
+          raise StandardError
+        rescue
+          turn
+        end
       end
 
     display_board
