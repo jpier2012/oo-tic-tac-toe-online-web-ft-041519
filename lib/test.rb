@@ -5,4 +5,4 @@ tic = TicTacToe.new
 tic.display_board
 tic.input_to_index("1")
 
-tic.display_board
+tic.turn
