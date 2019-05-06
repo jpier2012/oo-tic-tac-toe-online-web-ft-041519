@@ -39,12 +39,14 @@ class TicTacToe
 
   def turn
     puts "Please input a number 1 - 9"
-    valid_move? ? move(input_to_index, current_player) : raise InputError
+    input = input_to_index
+    unless valid_move?(input)
+      move(input, current_player) : raise InputError
   end
 
   class InputError < StandardError
     def msg
-      puts "Please enter a valid input!"
+      "Please enter a valid input!"
     end
   end
 end
