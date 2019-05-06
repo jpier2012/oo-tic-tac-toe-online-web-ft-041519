@@ -7,5 +7,11 @@ tic = TicTacToe.new
 tic.turn
 tic.turn
 tic.turn
+tic.turn
+tic.turn
+tic.turn
+tic.turn
+tic.turn
+tic.turn
 
 puts tic.won?
