@@ -39,13 +39,13 @@ class TicTacToe
 
   def turn
     puts "Please input a number 1 - 9"
-    input = input_to_index(gets.chomp)
-
-    if input < 0 || input > 8
-      raise StandardError.new("Please try again")
-    else
-      input
-    end
+    begin
+      input = input_to_index(gets.chomp)
+      if !input.is_a?(Integer) || input < 0 || input > 8
+        raise StandardError.new("Please try again")
+      else
+        input
+      end
 
     if valid_move?(input)
       move(input, current_player)
