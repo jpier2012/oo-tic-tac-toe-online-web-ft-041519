@@ -48,6 +48,7 @@ class TicTacToe
       rescue InputError => error
         puts error.msg
       end
+    end
   end
 
   class InputError < StandardError
