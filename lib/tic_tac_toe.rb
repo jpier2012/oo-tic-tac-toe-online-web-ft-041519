@@ -45,6 +45,7 @@ class TicTacToe
         raise StandardError.new("Please try again.")
       rescue
         retry
+    end
       else
         input
       end
