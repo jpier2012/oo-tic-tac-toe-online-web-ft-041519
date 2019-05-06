@@ -14,7 +14,12 @@ class TicTacToe
   end
 
   def input_to_index
-  if (gets.chomp.to_i - 1).is_a?(Number)
+  if !gets.chomp.is_a?(Integer)
+  begin
+    raise InputError
+  rescue input_to_index
+  ebd
+    
   end
 
   def move(index, token = 'X')
