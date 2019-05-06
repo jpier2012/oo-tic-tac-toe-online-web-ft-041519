@@ -53,8 +53,5 @@ class TicTacToe
   end
 
   class InputError < StandardError
-    def msg
-      "Please enter a valid input!"
-    end
   end
 end
