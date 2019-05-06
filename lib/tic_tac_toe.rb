@@ -17,7 +17,7 @@ class TicTacToe
     if !gets.chomp.is_a?(Integer)
       begin
         raise InputError
-      rescue input_to_index
+        rescue input_to_index
       end
     end
   end
