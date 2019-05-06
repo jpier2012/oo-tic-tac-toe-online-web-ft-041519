@@ -51,6 +51,6 @@ class TicTacToe
 
   class InputError < StandardError
 
-  ed
+  end
 
 end
