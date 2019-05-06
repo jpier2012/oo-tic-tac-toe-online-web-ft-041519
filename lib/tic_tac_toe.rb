@@ -14,7 +14,8 @@ class TicTacToe
   end
 
   def input_to_index
-    if !gets.chomp.is_a?(Integer)
+  input = gets.chomp.to_i - 1
+    if !input.is_a?(Integer)
       begin
         raise InputError
         rescue input_to_index
