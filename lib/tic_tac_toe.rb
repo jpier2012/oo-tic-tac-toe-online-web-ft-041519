@@ -28,4 +28,12 @@ class TicTacToe
   def valid_move?(index)
     @board[index] && !position_taken?
   end
+
+  def turn_count
+    @board.select { |pos| pos != " " }.count
+  end
+
+  def turn
+    puts ""
+  end
 end
