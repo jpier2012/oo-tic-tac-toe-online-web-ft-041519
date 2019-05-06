@@ -49,5 +49,4 @@ class TicTacToe
       move(input, current_player)
     end
   end
-
 end
