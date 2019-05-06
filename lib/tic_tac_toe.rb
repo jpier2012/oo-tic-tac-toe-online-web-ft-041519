@@ -46,6 +46,7 @@ class TicTacToe
         rescue
           retry
       end
+      input
     end
   end
 
