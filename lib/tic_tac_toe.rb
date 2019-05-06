@@ -41,9 +41,8 @@ class TicTacToe
 
   def turn
     puts "Please input a number 1 - 9"
-
-    input = input_to_index(gets.chomp)
     begin
+    input = input_to_index(gets.chomp)
       raise StandardError
     rescue
       retry if input < 0 || input > 8
