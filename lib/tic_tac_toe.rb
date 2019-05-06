@@ -46,13 +46,6 @@ class TicTacToe
     end
     valid_move?(input) ? move(input, current_player) : turn
     display_board
-
-    if input < 0 || input > 8
-      puts "Please enter a valid number"
-      input_to_index
-    else
-      input
-    end
   end
 
 end
