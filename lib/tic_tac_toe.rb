@@ -18,7 +18,7 @@ class TicTacToe
     if !input.is_a?(Integer)
       begin
         raise InputError
-        rescue puts "Please enter a valid number", input_to_index
+        rescue input_to_index
       end
     else
       input
