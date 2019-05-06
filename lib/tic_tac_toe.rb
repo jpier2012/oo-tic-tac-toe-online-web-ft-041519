@@ -34,6 +34,6 @@ class TicTacToe
   end
 
   def turn
-    puts ""
+    puts "Please input a number 1 - 9"
   end
 end
