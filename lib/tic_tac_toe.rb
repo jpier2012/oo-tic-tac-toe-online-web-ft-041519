@@ -43,6 +43,8 @@ class TicTacToe
   end
 
   class InputError < StandardError
-    puts "Please enter a valid input!"
+    def msg
+      puts "Please enter a valid input!"
+    end
   end
 end
