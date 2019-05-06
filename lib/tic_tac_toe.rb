@@ -45,9 +45,9 @@ class TicTacToe
     input = input_to_index(gets.chomp)
     if input < 0 || input > 8
         raise StandardError.new("Please try again.")
+      rescue
+        retry
     end
-  rescue
-    retry
   end
 
     if valid_move?(input)
