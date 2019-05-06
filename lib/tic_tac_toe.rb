@@ -45,7 +45,7 @@ class TicTacToe
     else
       input
     end
-    unless valid_move?(input)
+    if valid_move?(input)
       move(input, current_player)
     else
       puts "Please try again."
