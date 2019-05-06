@@ -33,9 +33,14 @@ class TicTacToe
     @board.select { |pos| pos != " " }.count
   end
 
+  def current_player
+
+  end
+
   def turn
     puts "Please input a number 1 - 9"
-    input_to_index
-
+    index = input_to_index
+    token = '0' if turn_count % 2 
+    valid_move? ? move(index, token)
   end
 end
