@@ -65,4 +65,6 @@ class TicTacToe
       combo.all? {|index| @board[index] == 'X'} || combo.all? {|index| @board[index] == 'O'}
     end
   end
+
+  
 end
