@@ -14,7 +14,7 @@ class TicTacToe
   end
 
   def input_to_index(string)
-    string.chomp.to_i - 1
+    string.to_i - 1
   end
 
   def move(index, token = 'X')
