@@ -13,8 +13,7 @@ class TicTacToe
     puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
   end
 
-  def input_to_index
-    input = gets.chomp
+  def input_to_index(string)
     unless input.is_a?(String)
       begin
         raise ArgumentError
