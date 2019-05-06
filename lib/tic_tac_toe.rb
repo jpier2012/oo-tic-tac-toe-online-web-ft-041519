@@ -64,7 +64,7 @@ class TicTacToe
     WIN_COMBINATIONS.find do |combo|
       combo.all? do |index|
         index == 'X' || @board[index] == 'O'
-        pry
+        binding.pry
       end
     end
   end
