@@ -19,6 +19,7 @@ class TicTacToe
       puts "Please enter a valid number"
       input_to_index
     end
+    input
   end
 
   def move(index, token = 'X')
