@@ -45,7 +45,7 @@ class TicTacToe
         begin
           raise StandardError
         rescue
-          puts "Please try again"
+          turn
         end
         turn
       else
