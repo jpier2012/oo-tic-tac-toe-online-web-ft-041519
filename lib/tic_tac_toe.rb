@@ -14,6 +14,7 @@ class TicTacToe
   end
 
   def input_to_index
+  begin
     gets.chomp.to_i - 1
   end
 
@@ -40,13 +41,8 @@ class TicTacToe
   def turn
     puts "Please input a number 1 - 9"
     input = input_to_index
-    unless valid_move?(input)
-      move(input, current_player)
-    else
-      begin
-        raise InputError
-      rescue InputError => error
-        puts error.msg
+      unless valid_move?(input)
+        move(input, current_player)
       end
     end
   end
