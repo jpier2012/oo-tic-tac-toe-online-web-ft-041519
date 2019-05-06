@@ -15,7 +15,7 @@ class TicTacToe
 
   def input_to_index
     input = gets.chomp.to_i - 1
-    until input >= 1 && input <= 9
+    unless input >= 1 && input <= 9
       input_to_index
     end
   end
