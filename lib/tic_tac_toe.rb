@@ -46,7 +46,7 @@ class TicTacToe
       raise
     rescue
       puts "Please try again."
-      retry unless input >= 0 || input <= 8
+      retry unless input >= 0 && input <= 8
     end
 
     if valid_move?(input)
