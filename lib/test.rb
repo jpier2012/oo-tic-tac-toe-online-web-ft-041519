@@ -5,4 +5,3 @@ tic = TicTacToe.new
 tic.display_board
 
 tic.turn
-tic.display_board
