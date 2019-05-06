@@ -18,8 +18,9 @@ class TicTacToe
     unless input >= 0 && input <= 8
       puts "Please enter a valid number"
       input_to_index
+    else
+      input
     end
-    input
   end
 
   def move(index, token = 'X')
