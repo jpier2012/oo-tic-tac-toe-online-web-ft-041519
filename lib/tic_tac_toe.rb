@@ -41,22 +41,17 @@ class TicTacToe
     puts "Please input a number 1 - 9"
     input = input_to_index(gets.chomp)
 
-      if input < 0 || input > 8
-        puts "Please input a number 1 - 9"
-      else
-        input
-      end
+    if input < 0 || input > 8
+      puts "Please try again"
+    else
+      input
+    end
 
-      if valid_move?(input)
-        move(input, current_player)
-      else
-        begin
-          raise StandardError
-        rescue
-          puts "Please try again"
-          turn
-        end
-      end
+    if valid_move?(input)
+      move(input, current_player)
+    else
+      puts "Please try again"
+    end
 
     display_board
   end
