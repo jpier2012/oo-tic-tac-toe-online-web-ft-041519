@@ -18,7 +18,7 @@ class TicTacToe
     gets.chomp.to_i - 1
   end
 
-  def move(index, token)
+  def move(index, token = 'X')
     @board[index] = token
   end
 end
