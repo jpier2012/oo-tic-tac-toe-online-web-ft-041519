@@ -18,7 +18,8 @@ class TicTacToe
     if !input.is_a?(Integer)
       begin
         raise InputError
-        rescue input_to_index
+      rescue InputError => error
+        input_to_index
       end
     else
       input
