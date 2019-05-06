@@ -57,7 +57,7 @@ class TicTacToe
         begin
           raise StandardError
         rescue
-          puts "Please try agaib"
+          puts "Please try again"
           turn
         end
       end
