@@ -18,7 +18,7 @@ class TicTacToe
     unless input >= 0 && input <= 8
       begin
         raise InputError
-        rescue InputError
+      rescue InputError, puts "This is an error"
       end
       input_to_index
     end
