@@ -48,7 +48,6 @@ class TicTacToe
     rescue
       retry if input < 0 || input > 8
     end
-    end
 
     if valid_move?(input)
       move(input, current_player)
